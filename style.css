@@ -200,3 +200,10 @@ main {
 .btn-signing-main:hover {
   background-color: gray;
 }
+
+.robot-3d {
+  /* background-color: #5300a0; */
+  position: absolute;
+  top: 0%;
+  right: -20%;
+}
