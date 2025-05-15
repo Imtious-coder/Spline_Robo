@@ -49,7 +49,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 5rem;
-  z-index: 999;
 }
 
 header h1 {
@@ -70,6 +69,7 @@ nav a {
   letter-spacing: 0.1rem;
   transition: color 0.2s ease;
   color: inherit;
+  z-index: 999;
 }
 
 nav a:hover {
@@ -86,6 +86,7 @@ nav a:hover {
   font-weight: 500;
   transition: background-color 0.2s ease;
   cursor: pointer;
+  z-index: 999;
 }
 
 .btn-signing:hover {
@@ -202,8 +203,95 @@ main {
 }
 
 .robot-3d {
-  /* background-color: #5300a0; */
   position: absolute;
   top: 0%;
   right: -20%;
+}
+
+/* TAB RESPONSIVE */
+
+@media (max-width: 1300px) {
+  header {
+    padding: 1rem 0.5rem;
+  }
+
+  .content {
+    margin-top: 85%;
+    margin-bottom: 5%;
+  }
+
+  .robot-3d {
+    scale: 0.8;
+    top: -20%;
+    right: 2%;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    padding: 1rem 0.1rem;
+  }
+
+  nav {
+    display: none;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .btn-signing {
+    padding: 0.6rem 1.5rem;
+  }
+
+  .content {
+    margin-top: 25rem;
+    margin-left: 10%;
+    max-width: 30rem;
+  }
+
+  .robot-3d {
+    scale: 0.5;
+    top: -25%;
+    right: 0;
+  }
+
+  .tag-box {
+    width: 12rem;
+  }
+
+  .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .btn-get-started {
+    font-size: 0.8rem !important;
+    padding: 0.5rem 1.2rem !important;
+  }
+  .btn-signing-main {
+    font-size: 0.8rem !important;
+    padding: 0.8rem 2rem !important;
+  }
+}
+
+@media (max-width: 440px) {
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 60vw;
+  }
+
+  .btn-get-started {
+    font-size: 1rem !important;
+    padding: 0.5rem 1.2rem;
+  }
+  .btn-signing-main {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+  }
 }
